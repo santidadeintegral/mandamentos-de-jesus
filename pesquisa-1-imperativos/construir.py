@@ -24,11 +24,13 @@ from glossario import GLOSSARIO  # noqa: E402
 from complemento import COMPLEMENTO  # noqa: E402
 from categorias import CATEGORIAS  # noqa: E402
 
+ROOT = Path(__file__).resolve().parent  # reafirma: o star-import de timbrado traz outro ROOT
+
 from openpyxl import Workbook  # noqa: E402
 from openpyxl.styles import Alignment, Font, PatternFill  # noqa: E402
 from openpyxl.utils import get_column_letter  # noqa: E402
 
-DOCS = ROOT / "docs"
+DOCS = ROOT / "docs"  # pasta docs/ desta pesquisa
 DOCS.mkdir(exist_ok=True)
 LIGHT_GREY = RGBColor(0x7A, 0x7A, 0x7A)
 BOOK_PT = {"Mt": "Mt", "Mk": "Mc", "Lk": "Lc", "Jn": "Jo"}

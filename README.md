@@ -1,51 +1,48 @@
 # Os Mandamentos de Jesus — Santidade Integral em Cristo
 
-Levantamento de **todas as ordens de Jesus nos quatro Evangelhos expressas no modo
-imperativo do grego**, agrupadas em categorias (à maneira de John Piper, *What Jesus
-Demands from the World*) e ordenadas por prioridade, com o fim de promover a
-obediência a Cristo: "ensinando-os a guardar todas as coisas que tenho ordenado a
-vocês" (Mt 28:20).
+Pesquisas bíblicas da ONG sobre o que Jesus ordenou e ensinou nos quatro Evangelhos,
+com documentos timbrados (DOCX/PDF), planilhas de achados (XLSX) e código reprodutível.
 
-## Produtos (pasta `docs/`)
+## Estrutura
 
-| Arquivo | O que é |
+| Pasta | Conteúdo |
 |---|---|
-| `Mandamentos_de_Jesus.docx` / `.pdf` | **Documento final** para a prática: 17 categorias priorizadas, versículo representativo (NAA) e todas as demais passagens entre parênteses |
-| `Mandamentos_de_Jesus_Achados.xlsx` | Todos os achados: cada imperativo, cada versículo com seus julgamentos, categorias, ordenação, complemento, excluídos e glossário |
-| `Projeto_e_Metodologia.docx` / `.pdf` | Definição do projeto, reformulação em termos de estudo teológico, fontes, conceitos, etapas, critérios e regra de priorização |
-| `Observacoes_e_Reflexoes.docx` / `.pdf` | Pontos de atenção metodológicos observados durante o trabalho |
+| `comum/` | Fontes e dados comuns: `preparar_dados.py` (baixa MorphGNT, WEB e Strong's; gera `dados/web_redletter.json`) e `biblia.py` (acesso aos dados) |
+| `pesquisa-1-imperativos/` | **Pesquisa 1** — todas as ordens de Jesus no **modo imperativo** do grego, em 17 categorias priorizadas (à maneira de John Piper) |
+| `pesquisa-2-deveres-sociais/` | **Pesquisa 2** — todas as falas de Jesus que descrevem um **dever do ouvinte para com a sociedade** (sem filtro gramatical), em 14 categorias priorizadas, com o mapa das atividades da ONG |
+| `timbrado.py`, `assets/` | Papel timbrado da ONG (mesmo do repositório `santidade-integral-documentos`) |
 
-## Método em uma frase
+Cada pesquisa tem `construir.py`, `dados/` (rótulos editáveis com os julgamentos) e `docs/`
+(documento final, planilha de achados, Projeto e Metodologia, Observações e Reflexões).
 
-MorphGNT (SBLGNT com morfologia) → filtrar modo imperativo em Mt/Mc/Lc/Jo → cruzar com
-as falas de Jesus marcadas na World English Bible (`\wj`) via números de Strong → revisar
-casos ambíguos → julgar destinatário e alcance de cada versículo → categorizar → somar
-passagens, complemento e ênfases → promover as categorias que o próprio Jesus hierarquiza.
+## Pesquisa 1 — Imperativos (`pesquisa-1-imperativos/docs/`)
 
-## Números
+- `Mandamentos_de_Jesus.docx/.pdf` — documento final: 17 categorias, versículo representativo (NAA) e demais passagens entre parênteses
+- `Mandamentos_de_Jesus_Achados.xlsx` — 843 imperativos, 482 versículos julgados, categorias, ordenação, complemento (†), excluídos, glossário
+- `Projeto_e_Metodologia.*`, `Observacoes_e_Reflexoes.*`
 
-- 843 verbos no imperativo nos quatro Evangelhos; 678 em versículos com fala de Jesus
-- 482 versículos classificados um a um (`dados/rotulos.py`)
-- 267 passagens normativas (universais ou generalizáveis) em 17 categorias
-- 54 ordens em formas não imperativas no complemento (marcadas †)
+Método: MorphGNT → modo imperativo em Mt/Mc/Lc/Jo → cruzamento com as falas de Jesus (WEB `\wj`) → julgamento de destinatário e alcance → categorias → pontuação + eminência explícita.
+
+## Pesquisa 2 — Deveres sociais (`pesquisa-2-deveres-sociais/docs/`)
+
+- `Deveres_Sociais_Documento_Institucional.docx/.pdf` — documento consolidado da ONG: 14 deveres priorizados, versículo representativo (NAA), atividades praticadas/planejadas com status, demais passagens entre parênteses, compromisso institucional
+- `Deveres_Sociais_Achados.xlsx` — triagem dos 1.955 versículos com fala de Jesus, versículos selecionados com julgamento, categorias, ordenação, atividades da ONG
+- `Projeto_e_Metodologia.*`, `Observacoes_e_Reflexoes.*`
+
+Método: leitura integral das 1.955 falas de Jesus → seleção pelo critério "descreve dever do ouvinte para com outras pessoas" → tipo (ordem, ensino, parábola, juízo, bem-aventurança, advertência, modelo, citação), força (direta, indireta, situacional), detalhe prático → categorias → pontuação + eminência (Mt 22:39-40; Mt 25:31-46) → mapa de obediência da ONG (`dados/atividades_ong.py`, a validar pela diretoria).
 
 ## Reproduzir
 
 ```bash
-python3 preparar_dados.py   # baixa MorphGNT, WEB e Strong's; gera dados/*.json
-python3 construir.py        # aplica rótulos, glossário, complemento e taxonomia; gera docs/
+python3 comum/preparar_dados.py                       # fontes comuns
+python3 pesquisa-1-imperativos/extrair_imperativos.py # imperativos (pesquisa 1)
+python3 pesquisa-1-imperativos/construir.py           # docs da pesquisa 1
+python3 pesquisa-2-deveres-sociais/construir.py       # docs da pesquisa 2
 ```
 
-Para alterar um julgamento, edite a linha correspondente em `dados/rotulos.py`
-(destinatário, alcance, categoria, resumo, nota) e rode `construir.py` de novo.
+Para alterar um julgamento, edite a linha correspondente em `dados/rotulos.py` da pesquisa e rode o `construir.py`.
 
 ## Fontes
 
-- SBLGNT + MorphGNT (CC BY-SA 3.0) — texto grego e morfologia
-- World English Bible, USFM (domínio público) — marcação das palavras de Jesus
-- Dicionário de Strong, Open Scriptures (CC BY-SA) — ponte grego–inglês
-- Nova Almeida Atualizada (SBB, 2017) — versículos representativos. **Os textos foram
-  transcritos de memória e devem ser conferidos com a edição oficial antes de impressão.**
-
-O papel timbrado (`timbrado.py`, `assets/logo.png`) é o mesmo do repositório
-`santidade-integral-documentos`.
+- SBLGNT + MorphGNT (CC BY-SA 3.0); World English Bible, USFM (domínio público); Dicionário de Strong, Open Scriptures (CC BY-SA)
+- Nova Almeida Atualizada (SBB, 2017) — versículos representativos. **Transcritos de memória; conferir com a edição oficial antes de imprimir.**
