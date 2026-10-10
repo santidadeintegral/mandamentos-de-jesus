@@ -7,15 +7,16 @@
   docs/Observacoes_e_Reflexoes.docx/.pdf        — pontos de atenção metodológicos
   docs/Mandamentos_de_Jesus_Achados.xlsx        — todos os achados, julgamentos e ordenação
 
-Uso: python3 construir.py   (requer dados/ já preparados por preparar_dados.py)
+Uso: python3 construir.py   (requer comum/preparar_dados.py e extrair_imperativos.py já executados)
 """
 import collections
 import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parent          # pesquisa-1-imperativos/
+REPO = ROOT.parent                              # raiz do repositório (timbrado.py, assets/)
+sys.path.insert(0, str(REPO))
 sys.path.insert(0, str(ROOT / "dados"))
 from timbrado import *  # noqa: E402,F401
 from rotulos import ROTULOS  # noqa: E402
@@ -425,11 +426,11 @@ def doc_metodologia(rows, versos, st, score, final):
     bullet(doc, "Mandamentos_de_Jesus_Achados.xlsx — imperativos, versículos, julgamentos, categorias, ordenação, complemento, excluídos e glossário.")
     bullet(doc, "Projeto_e_Metodologia.docx/.pdf — este documento.")
     bullet(doc, "Observacoes_e_Reflexoes.docx/.pdf — pontos de atenção metodológicos.")
-    bullet(doc, "dados/ e construir.py — dados brutos, rótulos e código que regenera tudo.")
+    bullet(doc, "comum/, pesquisa-1-imperativos/dados/ e construir.py — dados brutos, rótulos e código que regenera tudo.")
 
     section_title(doc, "10", "Como reproduzir")
-    body(doc, "No repositório: `python3 preparar_dados.py` baixa o MorphGNT, a WEB e o dicionário de Strong e gera os arquivos intermediários; "
-              "`python3 construir.py` aplica os rótulos (dados/rotulos.py), o glossário, o complemento e a taxonomia e produz a planilha e os "
+    body(doc, "No repositório: `python3 comum/preparar_dados.py` baixa o MorphGNT, a WEB e o dicionário de Strong e gera os arquivos "
+              "comuns; `python3 pesquisa-1-imperativos/extrair_imperativos.py` extrai os imperativos; `python3 pesquisa-1-imperativos/construir.py` aplica os rótulos (dados/rotulos.py), o glossário, o complemento e a taxonomia e produz a planilha e os "
               "documentos. Alterar um julgamento é editar uma linha em rotulos.py e rodar de novo.", size=9.5)
     finish(doc, "Projeto_e_Metodologia")
 

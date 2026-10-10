@@ -22,7 +22,7 @@
 },
 {
 "ref": "Mt 5:42",
-"form": "ἀποστραφῇς",
+"form": "ἀποστραφῇς.",
 "lemma": "ἀποστρέφω",
 "number": "S",
 "wj": "Give to him who asks you , and don’ t turn away him who desires to borrow from you ."
@@ -85,7 +85,7 @@
 },
 {
 "ref": "Mt 7:1",
-"form": "κριθῆτε",
+"form": "κριθῆτε·",
 "lemma": "κρίνω",
 "number": "P",
 "wj": "“Don’t judge , so that you won’t be judged ."
@@ -106,7 +106,7 @@
 },
 {
 "ref": "Mt 8:4",
-"form": "εἴπῃς",
+"form": "εἴπῃς,",
 "lemma": "λέγω",
 "number": "S",
 "wj": "“ See that you tell nobody ; but go , show yourself to the priest , and offer the gift that Moses commanded , as a testi"
@@ -120,7 +120,7 @@
 },
 {
 "ref": "Mt 10:5",
-"form": "εἰσέλθητε",
+"form": "εἰσέλθητε·",
 "lemma": "εἰσέρχομαι",
 "number": "P",
 "wj": "“Don’ t go among the Gentiles , and don’ t enter into any city of the Samaritans ."
@@ -162,14 +162,14 @@
 },
 {
 "ref": "Mt 13:14",
-"form": "συνῆτε",
+"form": "συνῆτε,",
 "lemma": "συνίημι",
 "number": "P",
 "wj": "In them the prophecy of Isaiah is fulfilled, which says , ‘ By hearing you will hear, and will in no way understand ; Se"
 },
 {
 "ref": "Mt 13:14",
-"form": "ἴδητε",
+"form": "ἴδητε.",
 "lemma": "ὁράω",
 "number": "P",
 "wj": "In them the prophecy of Isaiah is fulfilled, which says , ‘ By hearing you will hear, and will in no way understand ; Se"
@@ -225,14 +225,14 @@
 },
 {
 "ref": "Mt 21:21",
-"form": "διακριθῆτε",
+"form": "διακριθῆτε,",
 "lemma": "διακρίνω",
 "number": "P",
 "wj": "“Most certainly I tell you , if you have faith and don’ t doubt , you will not only do what was done to the fig tree , b"
 },
 {
 "ref": "Mt 23:8",
-"form": "κληθῆτε",
+"form": "κληθῆτε·",
 "lemma": "καλέω",
 "number": "P",
 "wj": "But you are not to be called ‘ Rabbi ’, for one is your teacher , the Christ , and all of you are brothers."
@@ -260,21 +260,21 @@
 },
 {
 "ref": "Mt 24:23",
-"form": "πιστεύσητε",
+"form": "πιστεύσητε·",
 "lemma": "πιστεύω",
 "number": "P",
 "wj": "“ Then if any man tells you , ‘ Behold , here is the Christ !’ or , ‘ There !’ don’ t believe it ."
 },
 {
 "ref": "Mt 24:26",
-"form": "ἐξέλθητε",
+"form": "ἐξέλθητε·",
 "lemma": "ἐξέρχομαι",
 "number": "P",
 "wj": "“ If therefore they tell you , ‘ Behold , he is in the wilderness ,’ don’ t go out ; or ‘ Behold , he is in the inner ro"
 },
 {
 "ref": "Mt 24:26",
-"form": "πιστεύσητε",
+"form": "πιστεύσητε·",
 "lemma": "πιστεύω",
 "number": "P",
 "wj": "“ If therefore they tell you , ‘ Behold , he is in the wilderness ,’ don’ t go out ; or ‘ Behold , he is in the inner ro"
@@ -288,14 +288,14 @@
 },
 {
 "ref": "Mk 1:44",
-"form": "εἴπῃς",
+"form": "εἴπῃς,",
 "lemma": "λέγω",
 "number": "S",
 "wj": "“ See that you say nothing to anybody, but go show yourself to the priest and offer for your cleansing the things which "
 },
 {
 "ref": "Mk 8:26",
-"form": "εἰσέλθῃς",
+"form": "⸀εἰσέλθῃς.",
 "lemma": "εἰσέρχομαι",
 "number": "S",
 "wj": "“Don’ t enter into the village , nor tell anyone in the village .”"
@@ -309,77 +309,77 @@
 },
 {
 "ref": "Mk 10:19",
-"form": "φονεύσῃς",
+"form": "⸂φονεύσῃς,",
 "lemma": "φονεύω",
 "number": "S",
 "wj": "You know the commandments : ‘ Do not murder ,’ ‘ Do not commit adultery ,’ ‘ Do not steal ,’ ‘ Do not give false testimo"
 },
 {
 "ref": "Mk 10:19",
-"form": "μοιχεύσῃς",
+"form": "μοιχεύσῃς⸃,",
 "lemma": "μοιχεύω",
 "number": "S",
 "wj": "You know the commandments : ‘ Do not murder ,’ ‘ Do not commit adultery ,’ ‘ Do not steal ,’ ‘ Do not give false testimo"
 },
 {
 "ref": "Mk 10:19",
-"form": "κλέψῃς",
+"form": "κλέψῃς,",
 "lemma": "κλέπτω",
 "number": "S",
 "wj": "You know the commandments : ‘ Do not murder ,’ ‘ Do not commit adultery ,’ ‘ Do not steal ,’ ‘ Do not give false testimo"
 },
 {
 "ref": "Mk 10:19",
-"form": "ψευδομαρτυρήσῃς",
+"form": "ψευδομαρτυρήσῃς,",
 "lemma": "ψευδομαρτυρέω",
 "number": "S",
 "wj": "You know the commandments : ‘ Do not murder ,’ ‘ Do not commit adultery ,’ ‘ Do not steal ,’ ‘ Do not give false testimo"
 },
 {
 "ref": "Mk 10:19",
-"form": "ἀποστερήσῃς",
+"form": "ἀποστερήσῃς,",
 "lemma": "ἀποστερέω",
 "number": "S",
 "wj": "You know the commandments : ‘ Do not murder ,’ ‘ Do not commit adultery ,’ ‘ Do not steal ,’ ‘ Do not give false testimo"
 },
 {
 "ref": "Mk 13:11",
-"form": "λαλήσητε",
+"form": "⸀λαλήσητε,",
 "lemma": "λαλέω",
 "number": "P",
 "wj": "When they lead you away and deliver you up , don’ t be anxious beforehand or premeditate what you will say , but say wha"
 },
 {
 "ref": "Mk 14:38",
-"form": "ἔλθητε",
+"form": "⸀ἔλθητε",
 "lemma": "ἔρχομαι",
 "number": "P",
 "wj": "Watch and pray , that you may not enter into temptation . The spirit indeed is willing , but the flesh is weak.”"
 },
 {
 "ref": "Lk 6:29",
-"form": "κωλύσῃς",
+"form": "κωλύσῃς.",
 "lemma": "κωλύω",
 "number": "S",
 "wj": "To him who strikes you on the cheek , offer also the other ; and from him who takes away your cloak , don’ t withhold yo"
 },
 {
 "ref": "Lk 6:37",
-"form": "κριθῆτε",
+"form": "κριθῆτε·",
 "lemma": "κρίνω",
 "number": "P",
 "wj": "Don’t judge , and you won’t be judged . Don’t condemn , and you won’t be condemned . Set free, and you will be set free."
 },
 {
 "ref": "Lk 6:37",
-"form": "καταδικασθῆτε",
+"form": "καταδικασθῆτε.",
 "lemma": "καταδικάζω",
 "number": "P",
 "wj": "Don’t judge , and you won’t be judged . Don’t condemn , and you won’t be condemned . Set free, and you will be set free."
 },
 {
 "ref": "Lk 10:4",
-"form": "ἀσπάσησθε",
+"form": "ἀσπάσησθε.",
 "lemma": "ἀσπάζομαι",
 "number": "P",
 "wj": "Carry no purse, nor wallet, nor sandals . Greet no one on the way ."
@@ -400,14 +400,14 @@
 },
 {
 "ref": "Lk 12:11",
-"form": "μεριμνήσητε",
+"form": "⸀μεριμνήσητε",
 "lemma": "μεριμνάω",
 "number": "P",
 "wj": "When they bring you before the synagogues , the rulers, and the authorities , don’ t be anxious how or what you will ans"
 },
 {
 "ref": "Lk 12:22",
-"form": "ἐνδύσησθε",
+"form": "ἐνδύσησθε.",
 "lemma": "ἐνδύω",
 "number": "P",
 "wj": "“ Therefore I tell you , don’ t be anxious for your life , what you will eat , nor yet for your body , what you will wea"
@@ -428,7 +428,7 @@
 },
 {
 "ref": "Lk 13:35",
-"form": "ἴδητέ",
+"form": "⸂ἴδητέ",
 "lemma": "ὁράω",
 "number": "P",
 "wj": "Behold , your house is left to you desolate. I tell you , you will not see me until you say , ‘ Blessed is he who comes "
@@ -449,42 +449,42 @@
 },
 {
 "ref": "Lk 17:23",
-"form": "διώξητε",
+"form": "διώξητε.",
 "lemma": "διώκω",
 "number": "P",
 "wj": "They will tell you , ‘ Look , here !’ or ‘ Look , there !’ Don’t go away or follow after them ,"
 },
 {
 "ref": "Lk 18:20",
-"form": "μοιχεύσῃς",
+"form": "μοιχεύσῃς,",
 "lemma": "μοιχεύω",
 "number": "S",
 "wj": "You know the commandments : ‘Don’ t commit adultery ,’ ‘Don’ t murder ,’ ‘Don’ t steal ,’ ‘Don’ t give false testimony ,"
 },
 {
 "ref": "Lk 18:20",
-"form": "φονεύσῃς",
+"form": "φονεύσῃς,",
 "lemma": "φονεύω",
 "number": "S",
 "wj": "You know the commandments : ‘Don’ t commit adultery ,’ ‘Don’ t murder ,’ ‘Don’ t steal ,’ ‘Don’ t give false testimony ,"
 },
 {
 "ref": "Lk 18:20",
-"form": "κλέψῃς",
+"form": "κλέψῃς,",
 "lemma": "κλέπτω",
 "number": "S",
 "wj": "You know the commandments : ‘Don’ t commit adultery ,’ ‘Don’ t murder ,’ ‘Don’ t steal ,’ ‘Don’ t give false testimony ,"
 },
 {
 "ref": "Lk 18:20",
-"form": "ψευδομαρτυρήσῃς",
+"form": "ψευδομαρτυρήσῃς,",
 "lemma": "ψευδομαρτυρέω",
 "number": "S",
 "wj": "You know the commandments : ‘Don’ t commit adultery ,’ ‘Don’ t murder ,’ ‘Don’ t steal ,’ ‘Don’ t give false testimony ,"
 },
 {
 "ref": "Lk 21:8",
-"form": "πλανηθῆτε",
+"form": "πλανηθῆτε·",
 "lemma": "πλανάω",
 "number": "P",
 "wj": "“Watch out that you don’ t get led astray , for many will come in my name , saying , ‘ I am he ,’ and , ‘ The time is at"
@@ -498,7 +498,7 @@
 },
 {
 "ref": "Lk 21:9",
-"form": "πτοηθῆτε",
+"form": "πτοηθῆτε·",
 "lemma": "πτοέομαι",
 "number": "P",
 "wj": "When you hear of wars and disturbances, don’ t be terrified , for these things must happen first , but the end won’ t co"
@@ -512,14 +512,14 @@
 },
 {
 "ref": "Lk 22:67",
-"form": "πιστεύσητε",
+"form": "πιστεύσητε·",
 "lemma": "πιστεύω",
 "number": "P",
 "wj": "“ If I tell you , you won’t believe ,"
 },
 {
 "ref": "Lk 22:68",
-"form": "ἀποκριθῆτε",
+"form": "⸀ἀποκριθῆτε.",
 "lemma": "ἀποκρίνομαι",
 "number": "P",
 "wj": "and if I ask , you will in no way answer me or let me go."
@@ -533,14 +533,14 @@
 },
 {
 "ref": "Jn 4:48",
-"form": "ἴδητε",
+"form": "ἴδητε,",
 "lemma": "ὁράω",
 "number": "P",
 "wj": "“ Unless you people see signs and wonders , you will in no way believe .”"
 },
 {
 "ref": "Jn 4:48",
-"form": "πιστεύσητε",
+"form": "πιστεύσητε.",
 "lemma": "πιστεύω",
 "number": "P",
 "wj": "“ Unless you people see signs and wonders , you will in no way believe .”"
@@ -568,7 +568,7 @@
 },
 {
 "ref": "Jn 16:1",
-"form": "σκανδαλισθῆτε",
+"form": "σκανδαλισθῆτε.",
 "lemma": "σκανδαλίζω",
 "number": "P",
 "wj": "“ I have said these things to you so that you wouldn’t be caused to stumble ."

@@ -1,7 +1,7 @@
 __pycache__/
 *.pyc
-dados/web_usfm/
-dados/eng-web_usfm.zip
+comum/dados/web_usfm/
+comum/dados/eng-web_usfm.zip
 .~lock.*#
 # gerado por outra sessão, não faz parte do build
-docs/Mandamentos_de_Jesus_Levantamento.xlsx
+pesquisa-1-imperativos/docs/Mandamentos_de_Jesus_Levantamento.xlsx
