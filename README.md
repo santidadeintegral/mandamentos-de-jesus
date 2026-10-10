@@ -25,11 +25,19 @@ Método: MorphGNT → modo imperativo em Mt/Mc/Lc/Jo → cruzamento com as falas
 
 ## Pesquisa 2 — Deveres sociais (`pesquisa-2-deveres-sociais/docs/`)
 
-- `Deveres_Sociais_Documento_Institucional.docx/.pdf` — documento consolidado da ONG: 14 deveres priorizados, versículo representativo (NAA), atividades praticadas/planejadas com status, demais passagens entre parênteses, compromisso institucional
-- `Deveres_Sociais_Achados.xlsx` — triagem dos 1.955 versículos com fala de Jesus, versículos selecionados com julgamento, categorias, ordenação, atividades da ONG
+Duas etapas, preservadas em subpastas:
+
+**`01-levantamento-inicial/`** — a busca inicial e o documento institucional
+- `Deveres_Sociais_Documento_Institucional.docx/.pdf` — 14 deveres priorizados, versículo representativo (NAA), atividades da ONG com status, demais passagens entre parênteses
+- `Deveres_Sociais_Achados.xlsx` — triagem dos 1.955 versículos, 384 julgados, categorias, ordenação, atividades
 - `Projeto_e_Metodologia.*`, `Observacoes_e_Reflexoes.*`
 
-Método: leitura integral das 1.955 falas de Jesus → seleção pelo critério "descreve dever do ouvinte para com outras pessoas" → tipo (ordem, ensino, parábola, juízo, bem-aventurança, advertência, modelo, citação), força (direta, indireta, situacional), detalhe prático → categorias → pontuação + eminência (Mt 22:39-40; Mt 25:31-46) → mapa de obediência da ONG (`dados/atividades_ong.py`, a validar pela diretoria).
+**`02-lista-de-praticas/`** — o produto principal: a lista de afazeres do voluntário, à maneira das obras de misericórdia metodistas
+- `Lista_de_Praticas_do_Voluntario.docx/.pdf` — 52 ações concretas em 7 grupos (corpo, alma, reconciliação, dar, família, serviço, paz/justiça), cada uma com "como fazer agora", versículo-base, demais versículos e caixas hoje/semana/mês; exame semanal
+- `Cartao_de_Bolso.docx/.pdf` — uma página com as 52 práticas e caixas de marcação
+- `Lista_de_Praticas_Rastreabilidade.xlsx` — cada prática ligada aos versículos julgados na etapa 1, justificativa, paralelo metodista, versículos não usados e motivo
+
+Método: leitura integral das 1.955 falas de Jesus → seleção pelo critério "descreve dever do ouvinte para com outras pessoas" → tipo (ordem, ensino, parábola, juízo, bem-aventurança, advertência, modelo, citação), força (direta, indireta, situacional), detalhe prático → categorias → pontuação + eminência (Mt 22:39-40; Mt 25:31-46) → mapa de obediência da ONG (`dados/atividades_ong.py`, a validar pela diretoria) → etapa 2: 52 práticas imediatas (`dados/praticas.py`).
 
 ## Reproduzir
 
@@ -37,7 +45,8 @@ Método: leitura integral das 1.955 falas de Jesus → seleção pelo critério 
 python3 comum/preparar_dados.py                       # fontes comuns
 python3 pesquisa-1-imperativos/extrair_imperativos.py # imperativos (pesquisa 1)
 python3 pesquisa-1-imperativos/construir.py           # docs da pesquisa 1
-python3 pesquisa-2-deveres-sociais/construir.py       # docs da pesquisa 2
+python3 pesquisa-2-deveres-sociais/construir.py           # etapa 1 (levantamento)
+python3 pesquisa-2-deveres-sociais/construir_praticas.py  # etapa 2 (lista de práticas)
 ```
 
 Para alterar um julgamento, edite a linha correspondente em `dados/rotulos.py` da pesquisa e rode o `construir.py`.

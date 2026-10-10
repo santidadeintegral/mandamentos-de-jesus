@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """Pesquisa 2 — Deveres sociais ensinados por Jesus. Constrói:
 
-  docs/Deveres_Sociais_Documento_Institucional.docx/.pdf  — documento consolidado da ONG (categorias priorizadas + atividades)
-  docs/Deveres_Sociais_Achados.xlsx                        — triagem dos 1.955 versículos, julgamentos, categorias, ordenação, atividades
+  docs/01-levantamento-inicial/Deveres_Sociais_Documento_Institucional.docx/.pdf  — documento consolidado da ONG (categorias priorizadas + atividades)
+  docs/01-levantamento-inicial/Deveres_Sociais_Achados.xlsx                        — triagem dos 1.955 versículos, julgamentos, categorias, ordenação, atividades
   docs/Projeto_e_Metodologia.docx/.pdf
   docs/Observacoes_e_Reflexoes.docx/.pdf
 
@@ -31,7 +31,7 @@ from openpyxl import Workbook  # noqa: E402
 from openpyxl.styles import Alignment, Font, PatternFill  # noqa: E402
 from openpyxl.utils import get_column_letter  # noqa: E402
 
-DOCS = ROOT / "docs"  # pasta docs/ desta pesquisa
+DOCS = ROOT / "docs" / "01-levantamento-inicial"  # etapa 1: levantamento, categorias, documento institucional
 DOCS.mkdir(exist_ok=True)
 LIGHT_GREY = RGBColor(0x7A, 0x7A, 0x7A)
 TIPO_PT = {"O": "ordem direta", "E": "ensino normativo", "P": "parábola/ilustração", "J": "juízo escatológico",
