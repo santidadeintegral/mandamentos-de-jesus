@@ -199,6 +199,11 @@ def doc_lista(usados):
                 "O que Jesus mandou fazer ao próximo, em ações que você pode realizar agora",
                 "Vá e faça o mesmo.", "Lucas 10:37", after=4)
     section_title(doc, "", "Como usar esta lista")
+    p = doc.add_paragraph(); spacing(p, after=4); p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    run(p, "“Qual destes três lhe parece ter sido o próximo do homem que caiu nas mãos dos assaltantes? "
+           "Ele respondeu: — O que usou de misericórdia para com ele. Então Jesus lhe disse: — Vá e faça o mesmo.”  ",
+        italic=True, size=10, color=GREEN)
+    run(p, "(Lucas 10:36-37)", bold=True, size=9.5, color=GREEN)
     body(doc, f"Esta lista reúne {len(PRATICAS)} ações concretas tiradas das falas de Jesus nos quatro Evangelhos (etapa 1 deste estudo: {len(ROTULOS)} versículos lidos e julgados). "
               "Cada linha é algo que uma pessoa pode parar o que está fazendo e realizar imediatamente, porque sempre há alguém ao alcance: "
               "com fome, com sede, doente, preso, de fora, em dívida, ofendido, sozinho.", size=9.5)
@@ -218,7 +223,6 @@ def doc_lista(usados):
         note(doc, lema, size=8.5)
         checklist_table(doc, itens)
 
-    doc.add_page_break()
     section_title(doc, "", "Exame semanal (à maneira do Holy Club)")
     for q in ["A quem dei de comer, de beber ou de vestir esta semana?",
               "Quem visitei: doente, preso, sozinho, afastado?",
@@ -230,6 +234,16 @@ def doc_lista(usados):
         bullet(doc, q, lead=BOX, size=9.5, after=2)
     p = doc.add_paragraph(); spacing(p, before=8, after=0)
     run(p, "Resumo do mês — práticas realizadas: ______ de 52      Assinatura do voluntário: ______________________________", size=9)
+    section_title(doc, "", "Para lembrar")
+    for verso, ref in [
+        ("Assim também vocês, depois de terem feito tudo o que lhes foi ordenado, digam: ‘Somos servos inúteis, porque fizemos apenas o que devíamos fazer.’", "Lucas 17:10"),
+        ("Pois somos feitura dele, criados em Cristo Jesus para boas obras, as quais Deus de antemão preparou para que andássemos nelas.", "Efésios 2:10"),
+        ("Mas, para aquele que não trabalha, porém crê naquele que justifica o ímpio, a sua fé lhe é atribuída como justiça.", "Romanos 4:5"),
+    ]:
+        p = doc.add_paragraph(); spacing(p, after=4); p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+        run(p, f"“{verso}”  ", italic=True, size=10, color=GREEN)
+        run(p, f"({ref})", bold=True, size=9.5, color=GREEN)
+    note(doc, "Textos bíblicos na Nova Almeida Atualizada, transcritos para este estudo; conferir com a edição da SBB antes da impressão definitiva.", size=8)
     finish(doc, "Lista_de_Praticas_do_Voluntario")
 
 
